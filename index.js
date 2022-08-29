@@ -62,7 +62,7 @@ function makeSound(key){
 
 //animation button
 function buttonAnimation(key) {
-    var currentButton = document.queryCommandValue("." + key)
+    var currentButton = document.querySelector("." + key)
     
 }
 

@@ -6,12 +6,14 @@ for (var i = 0; i < lol.length; i++)
        
         var b = this.innerHTML
         makeSound(b)
+        buttonAnimation(b)
     })
 }
 
 //this is for keyPress
 document.addEventListener("keypress", function(e){
     makeSound(e.key)
+    buttonAnimation(e.key)
 })
 
 //this is my function to display sounds ussing switch statement
@@ -57,3 +59,10 @@ function makeSound(key){
 
     }
 }
+
+//animation button
+function buttonAnimation(key) {
+    var currentButton = document.queryCommandValue("." + key)
+    
+}
+
